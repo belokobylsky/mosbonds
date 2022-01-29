@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const curEnd = bubblesList.lastElementChild.getBoundingClientRect().x + parseFloat(getComputedStyle(bubblesList.lastElementChild).width);
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".invest-bubbles ul", {
-        xPercent: 10,
-        x: () => bubblesList.getBoundingClientRect().x - curEnd*0.9,
+        // xPercent: -100,
+        x: () => bubblesList.getBoundingClientRect().x - curEnd * 0.85,
         ease: "none",
         scrollTrigger: {
             trigger: ".invest-bubbles ul",
@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
             markers: true,
             pin: true,
             invalidateOnRefresh: true,
-            // anticipatePin: 1
         }
     });
 });

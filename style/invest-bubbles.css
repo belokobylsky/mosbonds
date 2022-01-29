@@ -1,13 +1,12 @@
 .invest-bubbles {
     font-size: 24px;
+    overflow-x: hidden !important;
 }
 .invest-bubbles ul {
     position: relative;
     list-style: none;
     display: flex;
-    left: calc(50% - 206px);
-    /*min-height: 101vh;*/
-    /*padding-top: 10vh   ;*/
+    left: calc(50% - 17em);
 }
 
 
@@ -60,4 +59,14 @@
     background: #de1c30;
     margin-top: calc(0.7em + min(25vh, 100px));
     margin-left: -1.13em;
+}
+
+@media screen and (max-width: 945px) {
+    .invest-bubbles ul {
+        position: relative;
+        list-style: none;
+        display: flex;
+        left: calc(50% - 9em);
+    }
+
 }

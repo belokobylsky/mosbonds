@@ -2,6 +2,7 @@
     background: #de1c30;
     padding-bottom: 120px;
     padding-top: 80px;
+    overflow-x: hidden;
 }
 
 .main-block .blocks {
