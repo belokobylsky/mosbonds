@@ -1,6 +1,6 @@
 const greetHead = document.querySelector(".greet-anim h1"),
-    mainStyle = getComputedStyle(document.querySelector(".main-block")),
-    curHeight = parseFloat(mainStyle.height) + parseFloat(mainStyle.paddingTop);
+    mainEl = document.querySelector(".main-block"),
+    curHeight = mainEl.offsetHeight + mainEl.offsetTop;
 
 document.querySelector(".greet-anim").style.minHeight = curHeight + "px";
 let maxIdx = separateElem(greetHead, "greet-anim-letter", "p")
