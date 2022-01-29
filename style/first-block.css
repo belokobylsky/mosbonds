@@ -1,0 +1,202 @@
+.main-block {
+    background: #de1c30;
+    padding-bottom: 120px;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.main-block .blocks {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main-block__img,
+.main-block__header {
+    flex:1;
+}
+.main-block__header {
+    position: relative;
+    z-index: 15;
+    margin-right: 4vw;
+
+}
+.main-block__header h1 {
+    font-size: 80px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    min-width: 7.5em;
+}
+
+.main-block__img {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    flex-wrap: wrap;
+    min-width: 26em;
+}
+
+.main-block__img img {
+    width: 100%;
+}
+
+
+.main-block__building {
+    width: 16.6em;
+}
+.main-block__train {
+    margin-top: auto;
+    width: 9.36em;
+}
+
+.main-block__big-circle {
+    width: 12.6em;
+    height: 12.6em;
+    margin-left: 4em;
+}
+.main-block__small-circle {
+    width: 9.2em;
+}
+
+
+/* Circle animation */
+.main-block__building,
+.main-block__big-circle,
+.main-block__train {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.main-block__img.visible .main-block_anim {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.main-block__img.visible .main-block__big-circle .main-block_anim {
+    background: #d41428;
+    border-radius: 100% 0 0 0;
+    transform-origin: bottom right;
+    animation-name: main_big_circle;
+}
+@keyframes main_big_circle {
+    0% {
+        transform: rotate(-90deg);
+    }
+    1000% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.main-block__img.visible .main-block__train .main-block_anim {
+    background: #de1c30;
+    border-radius: 0 95% 0 0;
+    transform-origin: bottom left;
+    animation-name: main_train;
+}
+@keyframes main_train {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+.main-block__img.visible .main-block__building .main-block_anim {
+    opacity: 0.2;
+    border-radius: 0 0 0 100%;
+    background: #de1c30;
+    animation-name: main_building;
+    transform-origin: top right;
+}
+@keyframes main_building {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+.main-block__small-circle {
+    position: relative;
+}
+.main-block__img.visible .main-block__small-circle .main-block_anim {
+    position: relative;
+    z-index: 9;
+    height: auto;
+    transform-origin: top left;
+    animation-name: main_small_circle;
+}
+@keyframes main_small_circle {
+    0% {
+        transform: rotate(90deg);
+    }
+    1000% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.main-block__img.visible .main-block__small-circle::before,
+.main-block__img.visible .main-block__small-circle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 20em;
+    width: 20em;
+    border-radius: 0 0 100% 0;
+}
+.main-block__img.visible .main-block__small-circle::before {
+    background: linear-gradient(0deg, rgba(222,28,48,1) 0%, rgba(207,34,52,1) 70%);
+}
+.main-block__img.visible .main-block__small-circle::after {
+    z-index: 5;
+    background: #de1c30;
+    transform-origin: top left;
+    top: 0;
+    animation: main_building 1.5s ease-in-out forwards;
+}
+
+
+@media screen and (max-width: 1435px) {
+    html {
+        overflow-y: visible ;
+    }
+    .main-block {
+        padding-top: 100px;
+    }
+    .main-block__header {
+        margin-right: 0;
+    }
+    .main-block__header h1 {
+        font-size: 70px;
+    }
+    .main-block__img {
+        font-size: 15px;
+        max-width: 30em;
+        margin-bottom: 50px;
+    }
+
+}
+@media screen and (max-width: 945px) {
+    .main-block .blocks {
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-block__img {
+        font-size: 15px;
+    }
+    .main-block__header h1 {
+        font-size: 45px;
+    }
+}

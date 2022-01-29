@@ -52,17 +52,11 @@ h1, h2 {
 }
 
 header {
-    display: flex;
-    justify-content: center;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     padding-bottom: 10px;
 }
 
-header .container {
-    width: min(1312px, 90vw);
-    margin: 0;
-}
 
 .header-fixed {
     position: fixed;
@@ -179,8 +173,6 @@ header .blocks .wrapp_nav .link {
 
 .investments .white_block .inv_txt_2 .blocks .right {
     flex: 1;
-    display: flex;
-    justify-content: center;
 }
 
 .investments .white_block .inv_txt_2 .blocks .right .txt {
@@ -713,7 +705,6 @@ header .blocks .wrapp_nav .link {
     font-size: 48px;
     white-space: pre-wrap;
     color: #fff;
-    line-height: 60px;
 }
 
 .rating .bl_1 .wg_2 {
@@ -730,11 +721,10 @@ header .blocks .wrapp_nav .link {
 
 .rating .bl_1 .wg_2 .widgets .txt_w_1 .txt {
     font-size: 18px;
-    text-transform: uppercase;
 }
 
 .rating .bl_1 .wg_2 .widgets .txt_w_2 {
-    max-width: 740px;
+    max-width: 760px;
 }
 
 .rating .bl_1 .wg_2 .widgets .txt_w_2 .txt {
@@ -743,7 +733,7 @@ header .blocks .wrapp_nav .link {
 }
 
 .rating .bl_1 .wg_2 .widgets .txt_w_3 {
-    min-width: 14em;
+
 }
 
 .rating .bl_1 .wg_2 .widgets .txt_w_3 .txt {
@@ -1149,291 +1139,10 @@ header .blocks .wrapp_nav .link {
 }
 
 @media screen and (max-width: 1435px) {
-    header .container, .container {
-        width: max(700px, 90vw);
-    }
-    header .blocks .wrapp_nav .link {
-        margin-right: 20px;
-    }
-
-    .investments .white_block .inv_txt_2 {
-        background: 0;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .left {
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .right {
-        padding-right: 5vw;
-        width: 80vw;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .right .number .n {
-        font-size: 130px;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .right .number {
-        margin-top: 30px;
-    }
-
-    .greenbonds .right {
-        margin-left: 10px;
-    }
-
-    .greenbonds .b_2 {
-        margin-top: 100px;
-    }
-
-    .greenbonds .b_3 .blocks .right .wg_1 .w_right {
-        display: none;
-    }
-
-    .greenbonds .wg_2 .w_img {
-        margin-top: 30px;
-        width: 70%;
-    }
-
-    .moscow {
-        padding: 100px 0;
-    }
-
-    .moscow .bl_1 .wg_1 .content,
-    .moscow .bl_1 .wg_2 .content,
-    .moscow .bl_1 .wg_3 .content {
-        margin: auto;
-        max-width: 800px;
-    }
-
-    .moscow .bl_1 .wg_1,
-    .moscow .bl_1 .wg_2,
-    .moscow .bl_1 .wg_3 {
-        margin-top: 100px;
-    }
-
-    .moscow .bl_1 .wg_4 .blocks .left {
-        display: none;
-    }
-
-    .moscow .bl_1 .wg_4 .blocks .right {
+    .container {
         width: 700px;
-        margin: auto;
-        flex: none;
     }
 
-    .moscow .bl_2 .wg_1 .w_txt {
-        margin: auto;
-    }
-
-    .moscow .bl_2 {
-        margin-top: 100px;
-    }
-
-    .moscow .bl_3 {
-        margin-top: 100px;
-    }
-
-
-
-    .moscow .bl_3 .wg_2 .w_items .item:not(:last-child) {
-        margin-bottom: 50px;
-    }
-
-    .moscow .bl_3 .wg_2 {
-        margin-top: 100px;
-    }
-
-    .moscow .bl_3 .wg_1 {
-        text-align: center;
-    }
-
-    .moscow .bl_3 .wg_3 .w_items .item:not(:last-child) {
-        margin-bottom: 50px;
-    }
-
-    .rating .bl_1 .wg_2 .widgets .txt_w_1 {
-        margin-bottom: 30px;
-        margin-right: 30px;
-    }
-
-    .rating .bl_1 .wg_3 .widgets {
-        justify-content: center;
-    }
-
-    .rating .bl_1 .wg_2 .widgets .txt_w_3 .txt {
-        text-align: center;
-    }
-
-
-    .investments .white_block .inv_txt_3 .blocks .left {
-        width: 25%;
-    }
-    .investments .white_block .inv_txt_3 .blocks .right .bl_1 p,
-    .greenbonds .b_1 .blocks .right .txt_1,
-    .rating .bl_1 .wg_1 .txt_w p,
-    .rating .bl_1 .wg_2 .widgets .txt_w_2 .txt,
-    .rating .bl_2 .wg_2 .widgets .r_w .w_txt_1 {
-        font-size: 40px;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .left,
-    .greenbonds .b_1 .blocks .left p,
-    .rating .bl_2 .wg_1 .widgets .l_w .w_txt_1,
-    .rating .bl_2 .wg_2 .widgets .l_w .w_txt,
-    .rating .bl_2 .wg_3 .widgets .l_w .w_link,
-    .information .bl_1 .wg_1 .widgets .l_w .w_txt,
-    .information .bl_2 .wg_1 .widgets .l_w .w_txt,
-    .information .bl_3 .wg_1 .txt_w .txt_1 {
-        margin-top: 10px;
-        font-size: 18px;
-    }
-
-    .rating .bl_2 .wg_3 .widgets .l_w .w_link {
-        position: absolute;
-    }
-
-    .information .bl_1 .wg_1 .widgets .r_w .items_w .item .name {
-        margin-right: 90px;
-    }
-
-
-    .information .bl_1 .wg_1 .widgets .r_w .items_w {
-        max-width: 100%;
-    }
-
-    .information .bl_3 .wg_1 {
-        position: relative;
-    }
-
-    .table_w {
-        /*transform: translateX(calc(350px - 49vw));*/
-        /*width: 98vw;*/
-        background-color: #333;
-    }
-
-    .rating .bl_1 .wg_3 .widgets .left {
-    }
-
-    .information .bl_3 .wg_1 .table_w .row_t .i_1 {
-        padding-left: 5px;
-    }
-
-    .moscow .bl_1 .wg_1 .content .txt,
-    .moscow .bl_1 .wg_2 .content .txt,
-    .moscow .bl_1 .wg_3 .content .w_txt .txt {
-        font-size: 60px;
-    }
-
-    .rating .bl_2 .wg_2 {
-        margin-top: 100px;
-    }
-
-    .information {
-        padding-top: 100px;
-    }
-
-    .information .bl_3 .wg_1 .txt_w {
-        padding-bottom: 50px;
-        margin-bottom: 0;
-    }
-
-    .rating .bl_2 .wg_2 .widgets .r_w .w_txt_1 {
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 945px) {
-    header .container, .container {
-        width: min(700px, 90vw);
-    }
-    .rating .bl_1 .wg_3 .widgets .left {
-        display: none;
-    }
-    .rating .bl_1 .wg_4 .widgets .right {
-        width: auto;
-        padding: 0;
-        text-align: center;
-    }
-    .greenbonds .b_3 .blocks,
-    .greenbonds .b_1 .blocks,
-    .greenbonds .b_2 .blocks,
-    .rating .bl_2 .wg_2 .widgets,
-    .rating .bl_1 .wg_4 .widgets,
-    .rating .bl_1 .wg_2 .widgets,
-    .information .bl_1 .wg_1 .widgets,
-    .rating .bl_1 .wg_2 .widgets,
-    .rating .bl_2 .wg_1 .widgets,
-    .information .bl_2 .wg_1 .widgets {
-        display: block;
-    }
-
-    .greenbonds .b_2 .blocks .right {
-        width: auto;
-    }
-
-    .greenbonds .b_3 .blocks .right .wg_1 .w_left {
-        width: 100%;
-    }
-
-    .moscow .bl_3 .wg_2 .w_items {
-        flex-direction: column;
-    }
-
-    .moscow .bl_2 .wg_1 .w_txt {
-        max-width: 100vw;
-    }
-
-    .moscow .bl_3 .wg_2 .w_items .item {
-        width: auto;
-    }
-
-    .moscow .bl_3 .wg_3 .w_items {
-        flex-direction: column;
-    }
-
-    .moscow .bl_3 .wg_3 .w_items .item {
-        width: auto;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks {
-        display: block;
-        margin: auto;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .left {
-        width: auto;
-        text-align: left;
-        margin-bottom: 30px;
-    }
-
-    .investments .white_block .inv_txt_3 .blocks .right {
-        padding: 0;
-        width: 100%;
-    }
-
-    .greenbonds .right {
-        margin-left: 0;
-    }
-
-    .rating .bl_2 .wg_1 .widgets .l_w,
-    .information .bl_1 .wg_1 .widgets .l_w,
-    .information .bl_2 .wg_1 .widgets .l_w,
-    .rating .bl_1 .wg_4 .widgets .right,
-    .investments .white_block .inv_txt_3 .blocks .left,
-    .greenbonds .b_1 .blocks .left p,
-    .rating .bl_2 .wg_1 .widgets .l_w .w_txt_1,
-    .rating .bl_2 .wg_2 .widgets .l_w .w_txt,
-    .rating .bl_2 .wg_3 .widgets .l_w .w_link,
-    .greenbonds .b_1 .blocks .left,
-    .information .bl_1 .wg_1 .widgets .l_w .w_txt,
-    .rating .bl_2 .wg_2 .widgets .l_w,
-    .information .bl_2 .wg_1 .widgets .l_w .w_txt,
-    .information .bl_3 .wg_1 .txt_w .txt_1 {
-        width: auto;
-        margin-bottom: 30px;
-        font-size: 24px;
-    }
     .main_nav {
         display: none;
         z-index: 4;
@@ -1507,6 +1216,276 @@ header .blocks .wrapp_nav .link {
     header .blocks .wrapp_nav {
         justify-content: flex-end;
     }
+
+    .investments .white_block .inv_txt_2 {
+        background: 0;
+    }
+
+    .investments .white_block .inv_txt_2 .blocks .left p {
+        font-size: 20px;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks {
+        display: block;
+        width: 700px;
+        margin: auto;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks .left {
+        width: auto;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks .right {
+        padding: 0;
+        width: 100%;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks .right .number .n {
+        font-size: 130px;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks .right .number {
+        margin-top: 30px;
+    }
+
+    .greenbonds .b_1 .blocks {
+        display: block;
+    }
+
+    .greenbonds .b_1 .blocks .left {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .greenbonds {
+        padding-top: 100px;
+    }
+
+    .greenbonds .b_2 {
+        margin-top: 100px;
+    }
+
+    .greenbonds .b_2 .blocks {
+        display: block;
+    }
+
+    .greenbonds .b_2 .blocks .right {
+        width: auto;
+    }
+
+    .greenbonds .b_3 .blocks {
+        display: block;
+    }
+
+    .greenbonds .b_3 .blocks .right .wg_1 .w_right {
+        display: none;
+    }
+
+    .greenbonds .b_3 .blocks .right .wg_1 .w_left {
+        width: 100%;
+    }
+
+    .greenbonds .b_3 .blocks .right .wg_2 .w_img {
+        margin-top: 30px;
+    }
+
+    .moscow {
+        padding: 100px 0;
+    }
+
+    .moscow .bl_1 .wg_1 .content,
+    .moscow .bl_1 .wg_2 .content,
+    .moscow .bl_1 .wg_3 .content {
+        margin: auto;
+        max-width: auto;
+    }
+
+    .moscow .bl_1 .wg_1,
+    .moscow .bl_1 .wg_2,
+    .moscow .bl_1 .wg_3 {
+        margin-top: 100px;
+    }
+
+    .moscow .bl_1 .wg_4 .blocks .left {
+        display: none;
+    }
+
+    .moscow .bl_1 .wg_4 .blocks .right {
+        padding: 0;
+        width: 700px;
+        margin: auto;
+        flex: none;
+    }
+
+    .moscow .bl_2 .wg_1 .w_txt {
+        max-width: auto;
+        margin: auto;
+    }
+
+    .moscow .bl_2 {
+        margin-top: 100px;
+    }
+
+    .moscow .bl_2 .wg_2 .w_txt,
+    .moscow .bl_2 .wg_3 .w_txt {
+        margin: auto;
+    }
+
+    .moscow .bl_3 {
+        margin-top: 100px;
+    }
+
+    .moscow .bl_3 .wg_2 .w_items {
+        flex-direction: column;
+    }
+
+    .moscow .bl_3 .wg_2 .w_items .item {
+        width: auto;
+    }
+
+    .moscow .bl_3 .wg_2 .w_items .item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .moscow .bl_3 .wg_2 {
+        margin-top: 100px;
+    }
+
+    .moscow .bl_3 .wg_1 {
+        text-align: center;
+    }
+
+    .moscow .bl_3 .wg_3 .w_items {
+        flex-direction: column;
+    }
+
+    .moscow .bl_3 .wg_3 .w_items .item {
+        width: auto;
+    }
+
+    .moscow .bl_3 .wg_3 .w_items .item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .rating .bl_1 .wg_2 .widgets {
+        display: block;
+    }
+
+    .rating .bl_1 .wg_2 .widgets .txt_w_1 {
+        margin-bottom: 30px;
+    }
+
+    .rating .bl_1 .wg_3 .widgets {
+        justify-content: center;
+    }
+
+    .rating .bl_1 .wg_2 .widgets .txt_w_3 .txt {
+        text-align: center;
+    }
+
+    .rating .bl_1 .wg_4 .widgets {
+        display: block;
+    }
+
+    .rating .bl_1 .wg_4 .widgets .right {
+        width: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .rating .bl_2 .wg_1 .widgets {
+        display: block;
+    }
+
+    .rating .bl_2 .wg_1 .widgets .l_w {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .rating .bl_2 .wg_2 .widgets {
+        display: block;
+    }
+
+    .rating .bl_2 .wg_2 .widgets .l_w {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .rating .bl_2 .wg_3 .widgets .l_w .w_link {
+        position: absolute;
+    }
+
+    .information .bl_1 .wg_1 .widgets .r_w .items_w .item .name {
+        margin-right: 90px;
+    }
+
+    .information .bl_1 .wg_1 .widgets {
+        display: block;
+    }
+
+    .information .bl_1 .wg_1 .widgets .l_w {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .information .bl_2 .wg_1 .widgets {
+        display: block;
+    }
+
+    .information .bl_2 .wg_1 .widgets .l_w {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .information .bl_1 .wg_1 .widgets .r_w .items_w {
+        max-width: 100%;
+    }
+
+    .information .bl_3 .wg_1 {
+        position: relative;
+    }
+
+    .table_w {
+        transform: translateX(calc(350px - 49vw));
+        width: 98vw;
+        background-color: #333;
+    }
+
+    .rating .bl_1 .wg_3 .widgets .left {
+        display: none;
+    }
+
+    .information .bl_3 .wg_1 .table_w .row_t .i_1 {
+        padding-left: 5px;
+    }
+
+    .moscow .bl_1 .wg_1 .content .txt,
+    .moscow .bl_1 .wg_2 .content .txt,
+    .moscow .bl_1 .wg_3 .content .w_txt .txt {
+        font-size: 60px;
+    }
+
+    .rating .bl_2 .wg_2 {
+        margin-top: 100px;
+    }
+
+    .information {
+        padding-top: 100px;
+    }
+
+    .information .bl_3 .wg_1 .txt_w {
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+
+    .rating .bl_2 .wg_2 .widgets .r_w .w_txt_1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 945px) {
     .table_w {
         display: none;
     }
@@ -1525,9 +1504,10 @@ header .blocks .wrapp_nav .link {
 }
 
 @media screen and (max-width: 768px) {
-    /*.container {
+    .container {
         width: min(320px, 90vw);
-    }*/
+    }
+
     .main-block .blocks .left h1 {
         font-size: 45px;
     }
@@ -1538,8 +1518,7 @@ header .blocks .wrapp_nav .link {
     }
 
     .investments .white_block .inv_txt_2 .blocks {
-        /*display: block;*/
-        flex-direction: column-reverse;
+        display: block;
     }
 
     .investments .white_block .inv_txt_2 .blocks .right .txt .n {
@@ -1555,7 +1534,11 @@ header .blocks .wrapp_nav .link {
     }
 
     .investments .white_block .inv_txt_3 .blocks {
-        width: inherit;
+        width: 290px;
+    }
+
+    .investments .white_block .inv_txt_3 .blocks .left {
+        text-align: center;
     }
 
     .investments .white_block .inv_txt_3 .blocks .right .bl_1 p {
@@ -1600,10 +1583,6 @@ header .blocks .wrapp_nav .link {
         display: block;
     }
 
-    .greenbonds .b_2 .blocks .right .wg_1 .wrapp_img {
-        margin-bottom: 20px;
-    }
-
     .greenbonds .b_2 .blocks .right .wg_2 .line {
         display: none;
     }
@@ -1642,7 +1621,8 @@ header .blocks .wrapp_nav .link {
     }
 
     .wg_4 .w_txt {
-        max-width: 70vw;
+        max-width: 290px;
+        margin: auto;
     }
 
     .moscow .bl_2 .wg_1 .w_txt .txt {
@@ -1650,17 +1630,13 @@ header .blocks .wrapp_nav .link {
     }
 
     .moscow .bl_2 .wg_2 .w_txt {
-        display: block;
-        padding-bottom: 20px;
-    }
-
-    .rating .bl_1 .wg_1 .txt_w p {
-        line-height: 125%;
+        flex-direction: column;
+        max-width: 290px;
+        border-bottom: 0;
     }
 
     .moscow .bl_2 .wg_2 .w_txt .txt_2 {
         text-align: left;
-        max-width: 95vw;
     }
 
     .moscow .bl_2 .wg_1 {
@@ -1668,13 +1644,14 @@ header .blocks .wrapp_nav .link {
     }
 
     .moscow .bl_2 .wg_2 .w_txt .txt {
-        margin: 0 auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 
     .moscow .bl_2 .wg_3 .w_txt {
-        display: block;
-        margin: 0;
-        padding-bottom: 20px;
+        flex-direction: column;
+        max-width: 290px;
+        border-bottom: 0;
     }
 
     .moscow .bl_2 .wg_2 .w_txt .txt .n,
@@ -1684,11 +1661,11 @@ header .blocks .wrapp_nav .link {
 
     .moscow .bl_2 .wg_3 .w_txt .txt_2 {
         text-align: left;
-        max-width: 95vw;
     }
 
     .moscow .bl_2 .wg_3 .w_txt .txt {
-        margin: 0 auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
 
     .moscow .bl_3 .wg_1 .w_txt .txt {
@@ -1703,9 +1680,6 @@ header .blocks .wrapp_nav .link {
         margin-top: 50px;
     }
 
-    .rating .bl_1 .wg_1 .txt_w p .spaces {
-        display: none;
-    }
     .rating .bl_1 .wg_1 .txt_w p {
         font-size: 24px;
         white-space: normal;
@@ -1713,7 +1687,7 @@ header .blocks .wrapp_nav .link {
     }
 
     .rating .bl_1 .wg_2 {
-        margin-top: 75px;
+        margin-top: 100px;
     }
 
     .rating .bl_1 .wg_2 .widgets .txt_w_2 .txt {
@@ -1760,12 +1734,7 @@ header .blocks .wrapp_nav .link {
         font-size: 24px;
         margin-bottom: 15px;
     }
-    .information .bl_1 .wg_1 .widgets .r_w .items_w .item .bar {
-        display: none;
-    }
-    .information .bl_1 .wg_1 .widgets .r_w .items_w .item {
-        justify-content: space-between;
-    }
+
     .rating .bl_2 .wg_2 .widgets .r_w .w_txt_2 {
         font-size: 16px;
     }
@@ -1810,11 +1779,8 @@ header .blocks .wrapp_nav .link {
 
     .information .bl_1 .wg_1 .widgets .r_w .items_w .item .name {
         margin-right: 100px;
-        flex: 2;
     }
-    .information .bl_2 {
-        margin-top: 100px;
-    }
+
     .information .bl_2 .wg_1 .widgets .r_w .txt_w_1 {
         font-size: 24px;
     }
@@ -1825,6 +1791,10 @@ header .blocks .wrapp_nav .link {
 
     .information .bl_2 .wg_1 .widgets .r_w .group_w .w_txt_2 .n {
         font-size: 90px;
+    }
+
+    .moscow .bl_1 .wg_4 .blocks .right {
+        width: 290px;
     }
 
     .table_w {
