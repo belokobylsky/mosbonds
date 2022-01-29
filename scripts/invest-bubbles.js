@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".invest-bubbles ul", {
         // xPercent: -100,
-        x: () => bubblesList.getBoundingClientRect().x - curEnd * 0.85,
+        x: () => (bubblesList.getBoundingClientRect().x - curEnd * 0.85) * 0.9,
         ease: "none",
         scrollTrigger: {
             trigger: ".invest-bubbles ul",

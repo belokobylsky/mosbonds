@@ -2,25 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const greetHead = document.querySelector(".greet-anim h1"),
         mainStyle = getComputedStyle(document.querySelector(".main-block")),
         curHeight = parseFloat(mainStyle.height) + parseFloat(mainStyle.paddingTop);
-    let idx = 0,
-        maxIdx = 0;
+
     document.querySelector(".greet-anim").style.minHeight = curHeight + "px";
-
-    greetHead.innerHTML = "<p>" + [...greetHead.innerText].map(function(letter) {
-        if (letter === " ") {
-            if (idx > maxIdx) {
-                maxIdx = idx;
-            }
-            idx = 0;
-            return "</p><p>";
-        }
-        idx++;
-        if (idx > maxIdx) {
-            maxIdx = idx;
-        }
-        return `<span class="greet-anim-letter"><span data-index="${idx}">${letter}</span></span>`;
-    }).join("") + "</p>";
-
+    let maxIdx = separateElem(greetHead, "greet-anim-letter","p")
 
     for (let i = 1; i <= maxIdx; i++) {
         setTimeout(function() {
