@@ -1,0 +1,63 @@
+.invest-bubbles {
+    font-size: 24px;
+}
+.invest-bubbles ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    left: calc(50% - 206px);
+    /*min-height: 101vh;*/
+    /*padding-top: 10vh   ;*/
+}
+
+
+.invest-bubble {
+    --bubble-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: var(--bubble-width);
+    max-width: var(--bubble-width);
+    height: var(--bubble-width);
+    background: #333;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.invest-bubble__health {
+    --bubble-width: 17em;
+    margin-top: calc(7.17em + min(15vh, 100px));
+}
+
+.invest-bubble__house {
+    --bubble-width: 13.75em;
+    margin-left: -2.8em;
+    margin-top: min(15vh, 100px);
+}
+
+.invest-bubble__edu {
+    --bubble-width: 15em;
+    margin-top: calc(6.7em + min(15vh, 100px));
+    margin-left: -2.02em;
+}
+
+.invest-bubble__invest {
+    --bubble-width: 18.75em;
+    margin-top: calc(0.2em + min(15vh, 100px));
+    margin-left: -0.67em;
+}
+
+.invest-bubble__energy {
+    --bubble-width: 22.5em;
+    margin-top: calc(2.3em + min(15vh, 100px));
+    margin-left: -0.4em;
+}
+
+.invest-bubble__transport {
+    --bubble-width: 13.3em;
+    background: #de1c30;
+    margin-top: calc(0.7em + min(25vh, 100px));
+    margin-left: -1.13em;
+}

@@ -1,0 +1,53 @@
+.greet-anim {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #de1c30;
+    transition: .5s ease;
+}
+.greet-anim.hidden {
+    opacity: 0;
+}
+.greet-anim h1 {
+    font-size: 140px;
+    margin-left: 10vw;
+    font-weight: 700;
+    margin-top: 5vh;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.greet-anim p {
+    display: flex;
+}
+.greet-anim-letter {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.greet-anim-letter span {
+    display: block;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+}
+.greet-anim-letter span.greet-anim_visible {
+    transform: translateX(0);
+}
+
+
+@media screen and (max-width: 1435px) {
+    .greet-anim h1 {
+        font-size: 80px;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .greet-anim h1 {
+        font-size: 35px;
+        margin-top: -10vh;
+    }
+}
