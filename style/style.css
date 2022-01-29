@@ -1406,9 +1406,8 @@ header .blocks .wrapp_nav .link {
     }
 
     .table_w {
-        position: absolute;
-        left: 0;
-        width: 100%;
+        transform: translateX(calc(350px - 49vw));
+        width: 98vw;
         background-color: #333;
     }
 
