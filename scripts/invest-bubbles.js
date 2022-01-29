@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
             start: "top top",
             end: () => curEnd * 1.5,
             scrub: true,
-            markers: true,
             pin: true,
             invalidateOnRefresh: true,
         }
