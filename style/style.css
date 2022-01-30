@@ -1525,18 +1525,26 @@ header .blocks .wrapp_nav .link {
 }
 
 @media screen and (max-width: 768px) {
-    /*.container {
-        width: min(320px, 90vw);
-    }*/
-    .main-block .blocks .left h1 {
-        font-size: 45px;
-    }
 
-    .investments .inv_txt_1,
-    .investments .inv_abs_txt_1 {
+
+
+    .investments .white_block .inv_txt_2 .blocks .right .txt {
+        margin-bottom: 10px;
+    }
+    .investments {
+        margin-top: -1px;
+    }
+    .investments .inv_txt_1 .spaces {
         display: none;
     }
-
+    .investments .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .investments .inv_abs_txt_1 {
+        position: static;
+        padding: 15px 0;
+    }
     .investments .white_block .inv_txt_2 .blocks {
         /*display: block;*/
         flex-direction: column-reverse;
@@ -1649,9 +1657,13 @@ header .blocks .wrapp_nav .link {
         font-size: 36px;
     }
 
+
+    .moscow .bl_2 .wg_2 {
+        margin-bottom: 40px;
+    }
     .moscow .bl_2 .wg_2 .w_txt {
         display: block;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .rating .bl_1 .wg_1 .txt_w p {
