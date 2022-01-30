@@ -28,6 +28,6 @@ setTimeout(function () {
             document.querySelector(".greet-anim").style.display = "none";
         }, 500);
     }, maxIdx * 180);
-}, maxIdx * 250);
+}, maxIdx * 25000);
 
 

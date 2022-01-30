@@ -196,7 +196,20 @@
     .main-block__img {
         font-size: 15px;
     }
+    .main-block__header {
+        margin-right: auto;
+    }
     .main-block__header h1 {
+        max-width: 7.5em;
         font-size: 45px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main-block__img {
+        font-size: 10px;
+        margin-left: -20vw;
+    }
+    .main-block__header h1 {
+        font-size: 40px;
     }
 }

@@ -1,6 +1,4 @@
 .greet-anim {
-    display: flex;
-    align-items: center;
     position: absolute;
     top: 0;
     width: 100vw;
@@ -13,10 +11,11 @@
     opacity: 0;
 }
 .greet-anim h1 {
+    position: absolute;
+    left: 10vw;
+    top: 40vh;
     font-size: 140px;
-    margin-left: 10vw;
     font-weight: 700;
-    margin-top: 5vh;
     letter-spacing: 15px;
     text-transform: uppercase;
     color: #fff;
@@ -42,12 +41,18 @@
 @media screen and (max-width: 1435px) {
     .greet-anim h1 {
         font-size: 80px;
-        margin-top: 0;
+        top: 50vh;
     }
 }
 @media screen and (max-width: 768px) {
     .greet-anim h1 {
         font-size: 35px;
-        margin-top: -10vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .greet-anim h1 {
+        font-size: 30px;
+        left: 5vw;
+        letter-spacing: 10px;
     }
 }
