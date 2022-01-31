@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollToPlugin);
         const curEl = document.querySelector(target.getAttribute("href"));
         let posEl = 0;
         if (target.getAttribute("href") !== "#main-block") {
-            posEl = curEl.getBoundingClientRect().top + pageYOffset - 150;
+            posEl = curEl.getBoundingClientRect().top + pageYOffset - 100;
         }
         scrollTo({
             top: posEl,
