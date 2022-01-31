@@ -48,6 +48,9 @@
     .greet-anim h1 {
         font-size: 35px;
     }
+    .greet-anim h1 {
+        top: 30vh;
+    }
 }
 @media screen and (max-width: 600px) {
     .greet-anim h1 {

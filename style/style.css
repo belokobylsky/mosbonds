@@ -1976,7 +1976,10 @@ header .blocks .wrapp_nav .link {
     .moscow .bl_2 .wg_1 {
         margin-bottom: 50px;
     }
-
+    .moscow__background {
+        background-size: 40%;
+        background-position: top 0 right 0;
+    }
     .moscow .bl_2 .wg_2 .w_txt .txt {
         margin: 0 auto;
     }
@@ -2143,3 +2146,26 @@ header .blocks .wrapp_nav .link {
         display: none;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    .moscow__background {
+        background-size: 60%;
+        background-position: top 0 right -60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .moscow__background {
+        background-size: 80%;
+        background-position: top 0 right -80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .moscow__background {
+        background-size: 100%;
+        background-position: top 0 left 40vw;
+    }
+}
+
