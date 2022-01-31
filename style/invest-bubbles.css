@@ -1,6 +1,7 @@
 .invest-bubbles {
     font-size: 24px;
-    overflow-x: hidden !important;
+    max-width: 100vw;
+    overflow: hidden !important;
 }
 
 .invest-bubbles ul {
@@ -28,41 +29,44 @@
 
 .invest-bubble__health {
     --bubble-width: 17em;
-    margin-top: calc(7.17em + min(15vh, 100px));
+    margin-top: calc(7.17em + min(20vh, 200px));
 }
 
 .invest-bubble__house {
     --bubble-width: 13.75em;
     margin-left: -2.8em;
-    margin-top: min(15vh, 100px);
+    margin-top: min(20vh, 200px);
 }
 
 .invest-bubble__edu {
     --bubble-width: 15em;
-    margin-top: calc(6.7em + min(15vh, 100px));
+    margin-top: calc(6.7em + min(20vh, 200px));
     margin-left: -2.02em;
 }
 
 .invest-bubble__invest {
     --bubble-width: 18.75em;
-    margin-top: calc(0.2em + min(15vh, 100px));
+    margin-top: calc(0.2em + min(20vh, 200px));
     margin-left: -0.67em;
 }
 
 .invest-bubble__energy {
     --bubble-width: 22.5em;
-    margin-top: calc(2.3em + min(15vh, 100px));
+    margin-top: calc(2.3em + min(20vh, 200px));
     margin-left: -0.4em;
 }
 
 .invest-bubble__transport {
     --bubble-width: 13.3em;
     background: #de1c30;
-    margin-top: calc(0.7em + min(25vh, 100px));
+    margin-top: calc(0.7em + min(20vh, 200px));
     margin-left: -1.13em;
 }
 
 @media screen and (max-width: 945px) {
+    .invest-bubbles {
+        font-size: 20px;
+    }
     .invest-bubbles ul {
         position: relative;
         list-style: none;

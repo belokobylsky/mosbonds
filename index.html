@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style/greetings.css">
     <link rel="stylesheet" href="style/invest-bubbles.css">
     <link rel="stylesheet" href="style/contacts.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="scripts/components.js"></script>
@@ -24,12 +22,12 @@
                 <img src="img/logo-red.svg" alt="Облигации Москвы" class="header-fixed_visible">
             </div>
             <div class="wrapp_nav">
-                <div class="burger vov fade-in">
+                <div class="burger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <nav class="main_nav vov fade-in">
+                <nav class="main_nav">
                     <a class="link" href="#">ОБ ИНВЕСТИЦИЯХ</a>
                     <a class="link" href="#">О МОСКВЕ</a>
                     <a class="link" href="#">О ЗАЙМЕ</a>
@@ -49,7 +47,7 @@
     <section class="main-block">
         <div class="container">
             <div class="blocks">
-                <div class="main-block__header vov fade-in-left">
+                <div class="main-block__header">
                     <h1>ОБЛИГАЦИИ НА РАЗВИТИЕ МОСКВЫ</h1>
                 </div>
                 <div class="main-block__img">
@@ -73,64 +71,67 @@
     </section>
 
 
-    <section class="investments">
-        <div class="container">
-            <div class="inv_txt_1 vov fast fadein">
+    <section class="investments ">
+        <div class="container can-anim can-anim_css can-anim-appear">
+            <div class="inv_txt_1">
                 <p>
-                    <span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Размещение
+                    <span class="desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Размещение
                     облигаций позволит Москве продолжить реализацию важнейших
 
-                    <img src="img/txt2.png" class="txt_icon" alt="">
+                    <img src="img/txt2.png" class="txt_icon desktop" alt="">
 
                     городских проектов, которых ждут москвичи. К тому же, приостановка и последующее возобновление
                     проектов за счет собственных средств обойдутся городу дороже
                 </p>
+                <img src="img/txt2-mobile.png" alt="" class="mobile txt_icon">
             </div>
-            <div class="inv_abs_txt_1 vov faster fadeleft">
+            <div class="inv_abs_txt_1">
                 <h2>ДЛЯ ЧЕГО?</h2>
             </div>
         </div>
         <div class="white_block">
             <div class="inv_txt_2">
-                <div class="container">
-
-                    <div class="blocks">
-                        <div class="block-left-anim left vov fadeleft">
-                            <p>
-                                С учётом мультипликативного эффекта проекты приносят бюджету больше налоговых доходов,
-                                чем город тратит на обслуживание долга
-                            </p>
-                        </div>
-                        <div class="block-right-anim right vov fadein">
-                            <div class="txt">
-                                <span class="t">в</span>
-                                <span class="n">1,5–2</span>
-                                <span class="t">раза</span>
+                <div class="container investments__anim-red">
+                    <div class="container">
+                        <div class="blocks">
+                            <div class="left">
+                                <p>
+                                    С учётом мультипликативного эффекта проекты приносят бюджету больше налоговых
+                                    доходов,
+                                    чем город тратит на обслуживание долга
+                                </p>
+                            </div>
+                            <div class="right">
+                                <div class="txt">
+                                    <span class="t">в</span>
+                                    <span class="n">1,5–2</span>
+                                    <span class="t">раза</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="inv_txt_3 container vov faderight">
+            <div class="inv_txt_3 container">
                 <div class="blocks">
-                    <div class="left">
+                    <div class="left can-anim can-anim_css can-anim-appear">
                         <p>ОБЛИГАЦИИ</p>
                     </div>
                     <div class="right">
-                        <div class="bl_1">
+                        <div class="bl_1 can-anim can-anim_css can-anim-appear">
                             <p>
                                 СРЕДСТВА ПОЙДУТ НА ВАЖНЫЕ ИНФРАСТРУКТУРНЫЕ ПРОЕКТЫ МОСКВЫ
                             </p>
                         </div>
                         <div class="bl_2">
-                            <div class="animation line"></div>
+                            <div class="line animated-line"></div>
                             <div class="txt_">
                                 <p>
                                     сумма инвестиций в проекты развития Москвы с 2021 до 2023 года
                                 </p>
                             </div>
                         </div>
-                        <div class="number">
+                        <div class="number can-anim can-anim_css can-anim-appear">
                             <span class="n">1</span>
                             <span class="t">трлн</span>
                             <span class="n">799</span>
@@ -173,22 +174,22 @@
 
     <section class="greenbonds">
 
-        <div class="b_1 vov fadeleft">
+        <div class="b_1">
             <div class="container">
                 <div class="blocks">
-                    <div class="left">
+                    <div class="left can-anim can-anim_css can-anim-appear">
                         <p>
                             ЗЕЛЁНЫЕ ОБЛИГАЦИИ
                         </p>
                     </div>
                     <div class="right">
-                        <p class="txt_1">
+                        <p class="txt_1 can-anim can-anim_css can-anim-appear">
                             МОСКВА — ПЕРВЫЙ РОССИЙСКИЙ РЕГИОН, ВЫПУСТИВШИЙ ЗЕЛЁНЫЕ ОБЛИГАЦИИ
                         </p>
-                        <p class="txt_2">
+                        <p class="txt_2 can-anim can-anim_css can-anim-appear_little">
                             В соответствии с принципами Международной Ассоциации рынков капитала (ICMA)
                         </p>
-                        <p class="txt_3">
+                        <p class="txt_3 can-anim can-anim_css can-anim-appear_little">
                             Средства от размещения <a href="https://www.mos.ru/depr/documents/obligacii-moskvy/">зелёных
                             облигаций</a> будут направлены на реализацию проектов, которые способствуют достижению
                             экологических целей, в том числе направлены на сокращение отрицательного воздействия на
@@ -199,16 +200,17 @@
             </div>
         </div>
 
-        <div class="b_2 vov faderight">
+        <div class="b_2">
             <div class="container">
                 <div class="blocks">
                     <div class="left">
 
                     </div>
                     <div class="right">
-                        <h2>ЭЛЕКТРОБУСЫ</h2>
+                        <img src="img/electrobus.webp" alt="" class="greenbonds__electrobus desktop">
+                        <h2 class="can-anim can-anim_css can-anim-appear">ЭЛЕКТРОБУСЫ</h2>
                         <div class="wg_1">
-                            <div class="wrapp_img">
+                            <div class="wrapp_img can-anim can-anim_css can-anim-bubble">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none"
                                      preserveAspectRatio="xMidYMid meet">
                                     <circle cx="75" cy="75" r="75" fill="#CF1F2F"></circle>
@@ -220,17 +222,18 @@
                                           fill="#AF1725"></path>
                                 </svg>
                             </div>
-                            <div class="wrapp_txt">
+                            <div class="wrapp_txt can-anim_css can-anim-appear_little">
                                 Замена автобуса на электробус снижает выбросы загрязняющих веществ на 190-260 кг в год,
                                 а выбросов CO2 на 60,5 тонн в год
                             </div>
                         </div>
 
-                        <p class="wg_2">
-                            Новые электробусы <span class="line"></span>
-                        </p>
+                        <div class="wg_2">
+                            <p>Новые электробусы</p>
+                            <div class="line animated-line"></div>
+                        </div>
 
-                        <div class="wg_3">
+                        <div class="wg_3 can-anim can-anim_css can-anim-appear">
                             <div class="items">
                                 <div class="item">
                                     <div class="h_">
@@ -267,21 +270,21 @@
             </div>
         </div>
 
-        <div class="b_3 vov fadeleft">
+        <div class="b_3">
             <div class="container">
                 <div class="blocks">
                     <div class="left">
 
                     </div>
                     <div class="right">
-                        <h2>МЕТРО</h2>
+                        <h2 class="can-anim can-anim_css can-anim-appear">МЕТРО</h2>
                         <div class="wg_1">
                             <div class="w_left">
-                                <div class="wrapp_txt">
+                                <div class="wrapp_txt can-anim can-anim_css can-anim-appear">
                                     Благодаря открытию движения по новым участкам метро в 2023 году, не менее 10 тысяч
                                     автомобилей перестанут ежедневно выезжать на улицы города, а это значит:
                                 </div>
-                                <div class="items">
+                                <div class="items can-anim can-anim_css can-anim-appear_little">
                                     <div class="item">
                                         <div class="h_">
                                             <span class="n">885,5</span>
@@ -303,75 +306,87 @@
                                 </div>
                             </div>
                             <div class="w_right">
+                                <div class="metro-logo-anim"></div>
                                 <img src="img/metro.png" alt="">
                             </div>
 
                         </div>
 
 
-                        <div class="wg_2">
-                            <div class="w_img">
-                                <img src="img/metro2.png" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="w_img metro-photo-anim animated-opacity">
+            <img src="img/metro2.png" alt="">
         </div>
     </section>
 
     <section class="moscow">
         <div class="bl_1">
-            <div class="wg_1 vov fadedown">
-                <div class="container">
-                    <div class="content">
-                        <p class="txt">
-                            ЭКОНОМИЧЕСКИЙ ЦЕНТР СТРАНЫ
+            <div class="container">
+                <div class="blocks">
+                    <div class="left moscow__sticky">
+                        <p>
+                            МОСКВА
                         </p>
                     </div>
-                </div>
-            </div>
-            <div class="wg_2 vov fadedown">
-                <div class="container">
-                    <div class="content">
-                        <p class="txt">
-                            ГАРАНТ НАДЕЖНОГО ИНВЕСТИРОВАНИЯ
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="wg_3 vov fadedown">
-                <div class="container">
-                    <div class="content">
-                        <div class="w_txt">
-                            <p class="txt">
-                                ГЛОБАЛЬНЫЙ БИЗНЕС-ХАБ
-                            </p>
+                    <div class="right">
+                        <div class="wg_1">
+                            <div class="container">
+                                <div class="content">
+                                    <p class="txt">
+                                        ЭКОНОМИЧЕСКИЙ ЦЕНТР СТРАНЫ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moscow__background"></div>
+                        <div class="wg_2 animated-opacity">
+                            <div class="container">
+                                <div class="content">
+                                    <p class="txt">
+                                        ГАРАНТ НАДЕЖНОГО ИНВЕСТИРОВАНИЯ
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wg_3 animated-opacity">
+                            <div class="container">
+                                <div class="content">
+                                    <div class="w_txt">
+                                        <p class="txt">
+                                            ГЛОБАЛЬНЫЙ БИЗНЕС-ХАБ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wg_4">
+                            <div class="blocks">
+                                <div class="left animated-line">
+                                    <img src="img/arrow.png" class="arrow" alt="">
+                                </div>
+                                <div class="right">
+                                    <div class="w_txt">
+                                        <p class="txt">
+                                            каждая 5-я
+                                        </p>
+                                        <p class="txt_2">
+                                            российская компания зарегистрирована в Москве
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="wg_4 vov fadeleft">
-                <div class="blocks">
-                    <div class="left">
-                        <img src="img/arrow.png" class="arrow" alt="">
-                    </div>
-                    <div class="right">
-                        <div class="w_txt">
-                            <p class="txt">
-                                каждая 5-я
-                            </p>
-                            <p class="txt_2">
-                                российская компания зарегистрирована в Москве
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="bl_2">
-            <div class="title-animation-blog2 wg_1 vov fadedown">
+            <div class="title-animation-blog2 wg_1">
                 <div class="container">
                     <div class="w_txt">
                         <p class="txt">
@@ -380,7 +395,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card1 wg_2 vov fast fadeleft">
+            <div class="card1 wg_2 can-anim can-anim_css can-anim-appear">
                 <div class="container">
                     <div class="w_txt">
                         <p class="txt">
@@ -395,7 +410,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card2 wg_3 vov fast faderight">
+            <div class="card2 wg_3 can-anim can-anim_css can-anim-appear">
                 <div class="container">
                     <div class="w_txt">
                         <p class="txt">
@@ -412,7 +427,7 @@
             </div>
         </div>
         <div class="bl_3">
-            <div class="title-animation-blog3 wg_1 vov fadeleft">
+            <div class="title-animation-blog3 wg_1 can-anim can-anim_css can-anim-appear">
                 <div class="container">
                     <div class="w_txt">
                         <p class="txt">
@@ -421,13 +436,15 @@
                     </div>
                 </div>
             </div>
-            <div class="blog2-circles1 wg_2 vov fadeleft">
+            <div class="blog2-circles1 wg_2">
                 <div class="container">
                     <div class="w_items">
-                        <div class="item">
+                        <div class="item can-anim" data-anim="chart" data-percent="23.7">
                             <div class="content">
                                 <div class="img_block">
-                                    <img src="img/c_1.png" alt="">
+                                    <div class="moscow__chart-line"></div>
+                                    <div class="moscow__chart">
+                                    </div>
                                 </div>
                                 <div class="txt_block">
                                     <span class="n">0%</span>
@@ -437,15 +454,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item can-anim" data-anim="chart" data-percent="17.7">
                             <div class="content">
                                 <div class="img_block">
-                                    <img src="img/c_1.png" alt="">
+                                    <div class="moscow__chart-line"></div>
+                                    <div class="moscow__chart">
+                                    </div>
                                 </div>
                                 <div class="txt_block">
                                     <span class="n">0%</span>
                                     <span class="t">
-                                        конечный финансовый результат организаций до налогообложения
+                                        инвестиции в основной капитал
                                     </span>
                                 </div>
                             </div>
@@ -453,44 +472,47 @@
                     </div>
                 </div>
             </div>
-            <div class="blog2-circles2 wg_3 vov fadeleft">
+            <div class="blog2-circles2 wg_3">
                 <div class="container">
                     <div class="w_items">
-                        <div class="item">
+                        <div class="item can-anim" data-anim="chart" data-percent="15.3">
                             <div class="content">
                                 <div class="img_block">
-                                    <img src="img/c_1.png" alt="">
+                                    <div class="moscow__chart-line"></div>
+                                    <div class="moscow__chart"></div>
                                 </div>
                                 <div class="txt_block">
                                     <span class="n">0%</span>
                                     <span class="t">
-                                        конечный финансовый результат организаций до налогообложения
+                                        оборот розничной торговли
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item can-anim" data-anim="chart" data-percent="12.2">
                             <div class="content">
                                 <div class="img_block">
-                                    <img src="img/c_1.png" alt="">
+                                    <div class="moscow__chart-line"></div>
+                                    <div class="moscow__chart"></div>
                                 </div>
                                 <div class="txt_block">
                                     <span class="n">0%</span>
                                     <span class="t">
-                                        конечный финансовый результат организаций до налогообложения
+                                        отгрузка обрабатывающих производств
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item can-anim" data-anim="chart" data-percent="11.5">
                             <div class="content">
                                 <div class="img_block">
-                                    <img src="img/c_1.png" alt="">
+                                    <div class="moscow__chart-line"></div>
+                                    <div class="moscow__chart"></div>
                                 </div>
                                 <div class="txt_block">
                                     <span class="n">0%</span>
                                     <span class="t">
-                                        конечный финансовый результат организаций до налогообложения
+                                        объём работ в строительстве
                                     </span>
                                 </div>
                             </div>
@@ -506,21 +528,21 @@
         <div class="bl_1">
             <div class="wg_1">
                 <div class="container">
-                    <div class="txt_w content-title-rating vov faderight">
+                    <div class="txt_w content-title-rating">
                         <img src="img/icon_b.png" alt="">
-                        <p><span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Темпы роста экономики Москвы выше общероссийских</p>
+                        <p><span class="desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Темпы роста экономики Москвы выше общероссийских</p>
                     </div>
                 </div>
             </div>
             <div class="wg_2">
                 <div class="container">
-                    <div class="widgets content-invest-rating vov fadeleft">
-                        <div class="txt_w_1">
+                    <div class="widgets content-invest-rating">
+                        <div class="txt_w_1 can-anim can-anim_css can-anim-appear">
                             <p class="txt">
                                 Москва — надёжный заёмщик
                             </p>
                         </div>
-                        <div class="txt_w_2">
+                        <div class="txt_w_2 can-anim can-anim_css can-anim-appear">
                             <p class="txt">
                                 РЕЙТИНГ ИНВЕСТИЦИОННОЙ ПРИВЛЕКАТЕЛЬНОСТИ РОССИИ
                             </p>
@@ -534,21 +556,21 @@
                     </div>
                 </div>
             </div>
-            <div class="h1-title-rating wg_3 vov faderight">
+            <div class="h1-title-rating wg_3">
 
                 <div class="widgets">
-                    <div class="left">
+                    <div class="left can-anim can-anim_css">
                         <img src="img/arrow_b.png" alt="">
                     </div>
                     <div class="right">
-                        <p class="txt">
+                        <p class="txt can-anim" data-anim="rating">
                             место
                         </p>
                     </div>
                 </div>
 
             </div>
-            <div class="h1-subtitle-rating wg_4 vov fadein">
+            <div class="h1-subtitle-rating wg_4">
                 <div class="container">
                     <div class="widgets">
                         <div class="left">
@@ -569,53 +591,53 @@
             <div class="wg_1">
                 <div class="container">
                     <div class="widgets">
-                        <div class="blog2-subtitle l_w vov fadein">
+                        <div class="blog2-subtitle l_w can-anim can-anim_css can-anim-appear">
                             <div class="w_txt_1">
                                 НАДЁЖНОСТЬ
                             </div>
                         </div>
                         <div class="r_w">
-                            <div class="w_txt_1">
-                                <h2 class="blog2-title txt vov fadeleft">КРЕДИТНЫЙ РЕЙТИНГ</h2>
+                            <div class="w_txt_1 can-anim can-anim_css can-anim-appear">
+                                <h2 class="blog2-title txt">КРЕДИТНЫЙ РЕЙТИНГ</h2>
                             </div>
                             <div class="w_items">
-                                <div class="blog2-item1 item vov faderight">
+                                <div class="blog2-item1 item">
                                     <div class="txt_block">
                                         <p class="txt_1">ВAA3</p>
                                         <p class="txt_2">позитивный</p>
                                         <p class="txt_3">прогноз</p>
                                     </div>
-                                    <div class="img_block">
+                                    <div class="img_block can-anim can-anim_css">
                                         <img src="img/r_1.png" alt="">
                                     </div>
                                 </div>
-                                <div class="blog2-item2 item vov fadeleft">
+                                <div class="blog2-item2 item">
                                     <div class="txt_block">
                                         <p class="txt_1">BВВ</p>
                                         <p class="txt_2">стабильный</p>
                                         <p class="txt_3">прогноз</p>
                                     </div>
-                                    <div class="img_block">
+                                    <div class="img_block can-anim can-anim_css">
                                         <img src="img/r_2.png" alt="">
                                     </div>
                                 </div>
-                                <div class="blog2-item3 item vov faderight">
+                                <div class="blog2-item3 item">
                                     <div class="txt_block">
                                         <p class="txt_1">BВВ−</p>
                                         <p class="txt_2">стабильный</p>
                                         <p class="txt_3">прогноз</p>
                                     </div>
-                                    <div class="img_block">
+                                    <div class="img_block can-anim can-anim_css">
                                         <img src="img/r_3.png" alt="">
                                     </div>
                                 </div>
-                                <div class="blog2-item4 item vov fadeleft">
+                                <div class="blog2-item4 item">
                                     <div class="txt_block">
                                         <p class="txt_1">AAA</p>
                                         <p class="txt_2">стабильный</p>
                                         <p class="txt_3">прогноз</p>
                                     </div>
-                                    <div class="img_block">
+                                    <div class="img_block can-anim can-anim_css">
                                         <img src="img/r_4.png" alt="">
                                     </div>
                                 </div>
@@ -627,12 +649,12 @@
             <div class="wg_2">
                 <div class="container">
                     <div class="widgets">
-                        <div class="wg2-subtitle l_w vov fadein">
+                        <div class="wg2-subtitle l_w can-anim can-anim_css can-anim-appear">
                             <p class="w_txt">
                                 ОТНОШЕНИЕ ГОСУДАРСТВЕННОГО ДОЛГА К ДОХОДАМ БЮДЖЕТА
                             </p>
                         </div>
-                        <div class="wg2-title r_w vov faderight">
+                        <div class="wg2-title r_w can-anim can-anim_css can-anim-appear">
                             <div class="w_txt_1">
                                 ДОЛГ МОСКВЫ НА НАЧАЛО 2021 ГОДА — ВСЕГО 1%. ДОЛГ ЕВРОПЕЙСКИХ ГОРОДОВ — В СРЕДНЕМ 81%
                             </div>
@@ -643,9 +665,9 @@
                     </div>
                 </div>
             </div>
-            <div class="wg_3">
+            <div class="wg_3 can-anim can-anim_css can-anim-appear">
                 <div class="container">
-                    <div class="wg3-flex widgets vov fadeleft">
+                    <div class="wg3-flex widgets">
                         <div class="l_w">
                             <a class="w_link">
                                 Открытый бюджет
@@ -662,7 +684,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wg4-img wg_4 vov fadein">
+            <div class="wg4-img wg_4">
                 <div class="container">
                     <div class="w_img">
                         <img src="img/table.png" alt="">
@@ -678,22 +700,22 @@
             <div class="wg_1">
                 <div class="container">
                     <div class="widgets">
-                        <div class="l_w">
-                            <p class="subtitle-footer w_txt vov fadein">
+                        <div class="l_w can-anim can-anim_css can-anim-appear">
+                            <p class="subtitle-footer w_txt">
                                 COVID-19
                             </p>
                         </div>
                         <div class="r_w">
-                            <div class="title-footer txt_w_1 vov faderight">
+                            <div class="title-footer txt_w_1 can-anim can-anim_css can-anim-appear">
                                 ПО СРАВНЕНИЮ С ДРУГИМИ МИРОВЫМИ СТОЛИЦАМИ ЭКОНОМИКА МОСКВЫ ПРИЗНАНА ОДНОЙ ИЗ НАИБОЛЕЕ
                                 УСТОЙЧИВЫХ К ВЛИЯНИЮ ПАНДЕМИИ
                             </div>
-                            <div class="content-footer txt_w_2 vov fadeleft">
+                            <div class="content-footer txt_w_2 can-anim can-anim_css can-anim-appear_little">
                                 За 2020 год реальный ВРП Москвы снизился на 4% по сравнению с 2019 годом (Euromonitor
                                 International, 2020). Это лучше ситуации в других ведущих городах мира. Оценка
                                 сокращения ВРП по российским стандартам заметно меньше — около 2,4%
                             </div>
-                            <div class="items-footer items_w vov fadein">
+                            <div class="items-footer items_w">
                                 <div class="item">
                                     <div class="name">СТОКГОЛЬМ</div>
                                     <div class="bar"><span style="width:5%"></span></div>
@@ -706,52 +728,52 @@
                                 </div>
                                 <div class="item">
                                     <div class="name">НЬЮ-ЙОРК</div>
-                                    <div class="bar"><span style="width:18%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:18%"></span></div>
                                     <div class="number">-4,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ТОКИО</div>
-                                    <div class="bar"><span style="width:25%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:25%"></span></div>
                                     <div class="number">-4,8%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">БЕРЛИН</div>
-                                    <div class="bar"><span style="width:30%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:30%"></span></div>
                                     <div class="number">-5,3%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ОТТАВА</div>
-                                    <div class="bar"><span style="width:37%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:37%"></span></div>
                                     <div class="number">-6,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ВЕНА</div>
-                                    <div class="bar"><span style="width:46%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:46%"></span></div>
                                     <div class="number">-7,4%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ПАРИЖ</div>
-                                    <div class="bar"><span style="width:55%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:55%"></span></div>
                                     <div class="number">-8,2%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">РИМ</div>
-                                    <div class="bar"><span style="width:64%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:64%"></span></div>
                                     <div class="number">-8,7%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ДЕЛИ</div>
-                                    <div class="bar"><span style="width:71%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:71%"></span></div>
                                     <div class="number">-9,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ЛОНДОН</div>
-                                    <div class="bar"><span style="width:82%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:82%"></span></div>
                                     <div class="number">-10,8%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">МАДРИД</div>
-                                    <div class="bar"><span style="width:85%"></span></div>
+                                    <div class="bar animated-opacity"><span style="width:85%"></span></div>
                                     <div class="number">-10,9%</div>
                                 </div>
                             </div>
@@ -766,24 +788,24 @@
                 <div class="container">
                     <div class="widgets">
                         <div class="l_w">
-                            <p class="subtitle2 w_txt vov fadein">
+                            <p class="subtitle2 w_txt  can-anim can-anim_css can-anim-appear">
                                 COVID-19
                             </p>
                         </div>
                         <div class="r_w">
-                            <div class="title2 txt_w_1 vov fadeleft">
+                            <div class="title2 txt_w_1 can-anim can-anim_css can-anim-appear">
                                 ГОСПОДДЕРЖКА МОСКОВСКОГО БИЗНЕСА В ПЕРИОД ПАНДЕМИИ
                             </div>
-                            <div class="group group_w vov faderight">
+                            <div class="group group_w">
                                 <div class="w_txt_1">суммарный объём поддержки московского бизнеса</div>
-                                <div class="w_txt_2">
+                                <div class="w_txt_2 can-anim" data-anim="support">
                                     <span class="n">393,5</span>
-                                    <span class="t">млрд ₽</span>
+                                    <span class="t">&nbsp;млрд&nbsp;₽</span>
                                 </div>
-                                <div class="w_img">
+                                <div class="w_img information__support-anim">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 -34 377.7860107421875 377.781005859375" fill="none"
-                                         preserveAspectRatio="xMidYMid meet">
+                                         preserveAspectRatio="xMidYMid meet" >
                                         <g clip-path="url(#8cd5da0b-4cb3-47de-ade4-fb61e24ad1b3)">
                                             <g opacity="0.19">
                                                 <path d="M340.698 -34L0 306.698V343.78H37.0817L377.78 3.0818V-34H340.698Z"
@@ -811,7 +833,7 @@
         <div class="bl_3">
             <div class="wg_1">
                 <div class="container">
-                    <div class="block-footer txt_w vov fade-in">
+                    <div class="block-footer txt_w">
                         <p class="txt_1">ПАРАМЕТРЫ ВЫПУСКА ОБЛИГАЦИЙ</p>
                         <p class="txt_2">информация будет дополняться</p>
                         <a class="table-link" href="#">Смотреть таблицу</a>
@@ -912,10 +934,8 @@
 </div>
 
 
-<script src="scripts/invest-bubbles.js"></script>
+<script src="scripts/scroll.js"></script>
 <script src="scripts/greetings.js"></script>
-<script src="scripts/contacts.js"></script>
-<script src="scripts/animation.js"></script>
 <script src="scripts/menu.js"></script>
 </body>
 </html>
