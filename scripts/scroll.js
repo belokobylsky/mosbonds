@@ -15,6 +15,9 @@ gsap.registerPlugin(ScrollToPlugin);
             top: posEl,
             behavior: "smooth"
         });
+        if (document.querySelector(".back").classList.contains("back_active")) {
+            document.querySelector(".back").dispatchEvent(new Event("click"));
+        }
     });
 });
 
