@@ -1,19 +1,4 @@
-const burger = document.querySelector('.burger'),
-    menu = document.querySelector('.main_nav'),
-    back = document.querySelector('.back'),
-    header = document.querySelector("header");
-
-burger.addEventListener('click', () => {
-    menu.classList.add('main_nav_active')
-    back.classList.add('back_active')
-    burger.style.display = 'none'
-})
-
-back.addEventListener('click', () => {
-    menu.classList.remove('main_nav_active');
-    back.classList.remove('back_active')
-    burger.style.display = 'block'
-})
+const header = document.querySelector("header");
 
 function toggleHeader() {
     let headerRect = header.getBoundingClientRect();

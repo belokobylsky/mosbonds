@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 
 [...document.querySelectorAll('a[href^="#"]')].forEach(function(link) {
+    if (link.getAttribute("href").length === 1) return;
     link.addEventListener('click', function(event) {
         event.preventDefault();
         const target = event.target.closest("a");
@@ -15,9 +16,6 @@ gsap.registerPlugin(ScrollToPlugin);
             top: posEl,
             behavior: "smooth"
         });
-        if (document.querySelector(".back").classList.contains("back_active")) {
-            document.querySelector(".back").dispatchEvent(new Event("click"));
-        }
     });
 });
 
