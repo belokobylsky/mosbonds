@@ -1,4 +1,23 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
+
+
+[...document.querySelectorAll('a[href^="#"]')].forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const target = event.target.closest("a");
+        const curEl = document.querySelector(target.getAttribute("href"));
+        let posEl = 0;
+        if (target.getAttribute("href") !== "#main-block") {
+            posEl = curEl.getBoundingClientRect().top + pageYOffset - 150;
+        }
+        scrollTo({
+            top: posEl,
+            behavior: "smooth"
+        });
+    });
+});
+
 
 // --- BUBBLES ---
 const bubblesList = document.querySelector(".invest-bubbles ul");
@@ -21,6 +40,9 @@ gsap.to(".invest-bubbles ul", {
         invalidateOnRefresh: true,
     }
 });
+
+
+
 
 const animations = {
     chart(entry) {
@@ -99,13 +121,13 @@ window.addEventListener("load", function () {
     });
 
 
-// --- INVESTMENTS ---
+    // --- INVESTMENTS ---
     gsap.to(".investments__anim-red", {
         scrollTrigger: {
             trigger: ".investments__anim-red",
             scrub: true,
             start: "top 80%",
-            end: "top 40%",
+            end: "top center",
         },
         maxWidth: () => innerWidth,
         transformOrigin: "center center",
@@ -127,7 +149,7 @@ window.addEventListener("load", function () {
         });
     });
 
-// --- METRO ---
+    // --- METRO ---
     gsap.to(".metro-logo-anim", {
         scrollTrigger: {
             trigger: ".metro-logo-anim",
@@ -168,7 +190,7 @@ window.addEventListener("load", function () {
     setMetroPhotoWidth();
     window.addEventListener("resize", setMetroPhotoWidth);
 
-// --- BUS ---
+    // --- BUS ---
     gsap.from(".greenbonds__electrobus", {
         scrollTrigger: {
             trigger: ".greenbonds__electrobus",
@@ -182,7 +204,7 @@ window.addEventListener("load", function () {
     });
 
 
-// --- MOSCOW ---
+    // --- MOSCOW ---
     gsap.from(".moscow__background", {
         scrollTrigger: {
             trigger: ".moscow .bl_1 .wg_3",
@@ -207,7 +229,23 @@ window.addEventListener("load", function () {
     });
 
 
-// --- INFO ---
+    // --- BARS ---
+    gsap.utils.toArray(".animated-bar").forEach(function (bar) {
+        gsap.from(bar, {
+            scrollTrigger: {
+                trigger: bar,
+                scrub: true,
+                start: "top 90%",
+                end: "top center",
+            },
+            scaleY: "0",
+            transformOrigin: "left center",
+            ease: "none"
+        });
+    });
+
+
+    // --- INFO ---
     gsap.from(".information__support-anim", {
         scrollTrigger: {
             trigger: ".information__support-anim",

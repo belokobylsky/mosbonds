@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/contacts.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="scripts/components.js"></script>
 </head>
 <body>
@@ -28,11 +29,11 @@
                     <span></span>
                 </div>
                 <nav class="main_nav">
-                    <a class="link" href="#">ОБ ИНВЕСТИЦИЯХ</a>
-                    <a class="link" href="#">О МОСКВЕ</a>
-                    <a class="link" href="#">О ЗАЙМЕ</a>
-                    <a class="link" href="#">ЗЕЛЕНЫЕ ОБЛИГАЦИИ</a>
-                    <a class="link" href="#">КОНТАКТЫ</a>
+                    <a class="link" href="#investments">ОБ ИНВЕСТИЦИЯХ</a>
+                    <a class="link" href="#moscow">О МОСКВЕ</a>
+                    <a class="link" href="#about-loan">О ЗАЙМЕ</a>
+                    <a class="link" href="#greenbounds">ЗЕЛЁНЫЕ ОБЛИГАЦИИ</a>
+                    <a class="link" href="#contacts">КОНТАКТЫ</a>
                 </nav>
             </div>
         </div>
@@ -43,8 +44,7 @@
     <section class="greet-anim">
         <h1>Облигации москвы</h1>
     </section>
-
-    <section class="main-block">
+    <section class="main-block" id="main-block">
         <div class="container">
             <div class="blocks">
                 <div class="main-block__header">
@@ -71,7 +71,7 @@
     </section>
 
 
-    <section class="investments ">
+    <section id="investments" class="investments">
         <div class="container can-anim can-anim_css can-anim-appear">
             <div class="inv_txt_1">
                 <p>
@@ -172,7 +172,7 @@
     </section>
 
 
-    <section class="greenbonds">
+    <section id="greenbounds" class="greenbonds">
 
         <div class="b_1">
             <div class="container">
@@ -322,7 +322,7 @@
         </div>
     </section>
 
-    <section class="moscow">
+    <section id="moscow" class="moscow">
         <div class="bl_1">
             <div class="container">
                 <div class="blocks">
@@ -530,7 +530,8 @@
                 <div class="container">
                     <div class="txt_w content-title-rating">
                         <img src="img/icon_b.png" alt="">
-                        <p><span class="desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Темпы роста экономики Москвы выше общероссийских</p>
+                        <p><span class="desktop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Темпы
+                            роста экономики Москвы выше общероссийских</p>
                     </div>
                 </div>
             </div>
@@ -728,52 +729,52 @@
                                 </div>
                                 <div class="item">
                                     <div class="name">НЬЮ-ЙОРК</div>
-                                    <div class="bar animated-opacity"><span style="width:18%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:18%"></span></div>
                                     <div class="number">-4,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ТОКИО</div>
-                                    <div class="bar animated-opacity"><span style="width:25%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:25%"></span></div>
                                     <div class="number">-4,8%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">БЕРЛИН</div>
-                                    <div class="bar animated-opacity"><span style="width:30%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:30%"></span></div>
                                     <div class="number">-5,3%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ОТТАВА</div>
-                                    <div class="bar animated-opacity"><span style="width:37%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:37%"></span></div>
                                     <div class="number">-6,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ВЕНА</div>
-                                    <div class="bar animated-opacity"><span style="width:46%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:46%"></span></div>
                                     <div class="number">-7,4%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ПАРИЖ</div>
-                                    <div class="bar animated-opacity"><span style="width:55%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:55%"></span></div>
                                     <div class="number">-8,2%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">РИМ</div>
-                                    <div class="bar animated-opacity"><span style="width:64%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:64%"></span></div>
                                     <div class="number">-8,7%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ДЕЛИ</div>
-                                    <div class="bar animated-opacity"><span style="width:71%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:71%"></span></div>
                                     <div class="number">-9,1%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">ЛОНДОН</div>
-                                    <div class="bar animated-opacity"><span style="width:82%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:82%"></span></div>
                                     <div class="number">-10,8%</div>
                                 </div>
                                 <div class="item">
                                     <div class="name">МАДРИД</div>
-                                    <div class="bar animated-opacity"><span style="width:85%"></span></div>
+                                    <div class="bar animated-bar"><span style="width:85%"></span></div>
                                     <div class="number">-10,9%</div>
                                 </div>
                             </div>
@@ -805,7 +806,7 @@
                                 <div class="w_img information__support-anim">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 -34 377.7860107421875 377.781005859375" fill="none"
-                                         preserveAspectRatio="xMidYMid meet" >
+                                         preserveAspectRatio="xMidYMid meet">
                                         <g clip-path="url(#8cd5da0b-4cb3-47de-ade4-fb61e24ad1b3)">
                                             <g opacity="0.19">
                                                 <path d="M340.698 -34L0 306.698V343.78H37.0817L377.78 3.0818V-34H340.698Z"
@@ -830,7 +831,7 @@
             </div>
         </div>
 
-        <div class="bl_3">
+        <div class="bl_3" id="about-loan">
             <div class="wg_1">
                 <div class="container">
                     <div class="block-footer txt_w">
@@ -917,7 +918,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="container">
             <div class="contain-widgets">
                 <p class="left-widget mark mark-red">
@@ -930,7 +931,17 @@
                 </p>
             </div>
         </div>
+        <a href="#main-block" class="up-arrow desktop">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" preserveAspectRatio="xMidYMid meet">
+                <circle cx="32" cy="32" r="32" fill="white"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M34.0002 43.1716L44.5859 32.5858L47.4144 35.4142L33.4144 49.4142L32.0002 50.8284L30.5859 49.4142L16.5859 35.4142L19.4144 32.5858L30.0002 43.1716V13H34.0002V43.1716Z"
+                      fill="#3E3E41"></path>
+            </svg>
+        </a>
     </section>
+
+
 </div>
 
 

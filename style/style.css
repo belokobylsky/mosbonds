@@ -87,7 +87,7 @@ header:not(.header-fixed) .header-fixed_visible,
 
 header .blocks {
     display: flex;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 header .blocks .wrapp_logo {
@@ -877,7 +877,6 @@ header .blocks .wrapp_nav .link {
 
 .rating .bl_1 .wg_1 .txt_w p {
     font-size: 48px;
-    white-space: pre-wrap;
     color: #fff;
     line-height: 60px;
 }
@@ -2152,6 +2151,18 @@ header .blocks .wrapp_nav .link {
     .moscow__background {
         background-size: 60%;
         background-position: top 0 right -60%;
+    }
+
+    .information .bl_2 .wg_1 .widgets .r_w .group_w .w_txt_2 .n {
+        font-size: 60px;
+    }
+    .information .bl_2 .wg_1 .widgets .r_w .group_w .w_txt_1 {
+        max-width: 100%;
+    }
+    .information .bl_2 .wg_1 .widgets .r_w .group_w .w_txt_2 .t {
+        display: flex;
+        font-size: 30px;
+        padding-bottom: 10px;
     }
 }
 

@@ -6,7 +6,6 @@ const burger = document.querySelector('.burger'),
 burger.addEventListener('click', () => {
     menu.classList.add('main_nav_active')
     back.classList.add('back_active')
-    console.log(header)
     burger.style.display = 'none'
 })
 
